@@ -1,30 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const toggleBtn = document.getElementById('theme-toggle');
-  const htmlEl = document.documentElement;
-  
-  const applyTheme = (theme) => {
-    if (theme === 'dark') {
-      htmlEl.classList.add('dark');
-      toggleBtn.textContent = '☀️';
-      localStorage.setItem('theme', 'dark');
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const htmlElement = document.documentElement;
+
+  const updateButtonIcon = () => {
+    if (htmlElement.classList.contains('dark')) {
+      themeToggleBtn.textContent = '☀️';
     } else {
-      htmlEl.classList.remove('dark');
-      toggleBtn.textContent = '🌙';
-      localStorage.setItem('theme', 'light');
+      themeToggleBtn.textContent = '🌙';
     }
   };
 
   const savedTheme = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  if (savedTheme) {
-    applyTheme(savedTheme);
+  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    htmlElement.classList.add('dark');
   } else {
-    applyTheme(prefersDark ? 'dark' : 'light');
+    htmlElement.classList.remove('dark');
   }
 
-  toggleBtn.addEventListener('click', () => {
-    const isDark = htmlEl.classList.contains('dark');
-    applyTheme(isDark ? 'light' : 'dark');
+  updateButtonIcon();
+
+  themeToggleBtn.addEventListener('click', () => {
+    htmlElement.classList.toggle('dark');
+
+    if (htmlElement.classList.contains('dark')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+
+    updateButtonIcon();
   });
 });
