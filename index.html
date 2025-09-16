@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cristiano Binetti - Software Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+  <!-- Header -->
+  <header class="max-w-4xl mx-auto p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between fade-in">
+    <div>
+      <h1 class="text-4xl font-extrabold">Cristiano Binetti</h1>
+      <p class="mt-2 text-lg">Software Engineer • Tuscany, Italy</p>
+    </div>
+    <div class="flex space-x-3 mt-4 sm:mt-0">
+      <a href="mailto:cristiano.binetti.1997@gmail.com" class="px-3 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">Email me</a>
+      <button id="theme-toggle" class="px-3 py-2 border rounded-lg transition">🌙</button>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 space-y-12">
+    <!-- Summary -->
+    <section class="fade-in delay-200">
+      <h2 class="text-2xl font-bold mb-3">Summary</h2>
+      <p class="leading-relaxed">Experienced <b>Backend Java Developer</b>, specialized in <b>Spring Boot</b> and <b>Spring Cloud</b> microservices. Proficient in <b>Python</b>, <b>SQL</b>, and event-driven architectures with <b>Kafka</b>. Skilled with <b>Docker</b>, <b>Kubernetes</b>, <b>Jenkins</b>, <b>Grafana</b>, and <b>Prometheus</b>.</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="fade-in delay-400">
+      <h2 class="text-2xl font-bold mb-3">Technical Skills</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">Java</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">Python</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">SQL</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">Spring Boot</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">Spring Cloud</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">MySQL</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">PostgreSQL</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">MongoDB</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">ClickHouse</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">Kafka</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">Docker</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">Kubernetes</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full">Jenkins</span>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="fade-in delay-600">
+      <h2 class="text-2xl font-bold mb-6">Experience</h2>
+      <div class="space-y-8 border-l border-gray-300 dark:border-gray-600 pl-6">
+        <div>
+          <h3 class="text-xl font-semibold">Java Software Engineer @ Eutelsat Group</h3>
+          <span class="text-sm text-gray-500 dark:text-gray-400">Nov 2023 – Present | Turin, Italy</span>
+          <ul class="list-disc ml-6 mt-2 space-y-1">
+            <li>Developing Java microservices with Spring Boot & Spring Cloud.</li>
+            <li>Managing MySQL, ClickHouse, ProxySQL, Flyway migrations.</li>
+            <li>Kafka-based workflows; CI/CD with Jenkins, Docker, Kubernetes.</li>
+            <li>Python scripting for automation & data processing.</li>
+            <li>Monitoring with Grafana, Prometheus, DevOps tooling.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold">Java Developer & Software Architect @ Intesa Sanpaolo</h3>
+          <span class="text-sm text-gray-500 dark:text-gray-400">Jul 2020 – Nov 2023 | Turin, Italy</span>
+          <ul class="list-disc ml-6 mt-2 space-y-1">
+            <li>Designed backend systems with Spring Boot, Kafka.</li>
+            <li>Led teams as Tech Lead; managed Agile & Waterfall workflows.</li>
+            <li>Integrated PostgreSQL, MongoDB; used Jira, Confluence.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold">Virtual Reality Developer @ Kineton</h3>
+          <span class="text-sm text-gray-500 dark:text-gray-400">Aug 2019 – Jul 2020 | Naples, Italy</span>
+          <ul class="list-disc ml-6 mt-2 space-y-1">
+            <li>Developed real-time VR apps in Java using 3D engines.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="fade-in delay-800">
+      <h2 class="text-2xl font-bold mb-3">Education</h2>
+      <p><b>University of Salerno</b> — Bachelor's in Computer Science (2016–2020) — Final grade: 109/110</p>
+    </section>
+
+    <!-- Certifications -->
+    <section class="fade-in delay-1000">
+      <h2 class="text-2xl font-bold mb-3">Certifications</h2>
+      <ul class="list-disc ml-6 space-y-1">
+        <li><a class="text-blue-500 hover:underline" href="https://www.coursera.org/account/accomplishments/specialization/certificate/CHA8DBWBGJ2K">PostgreSQL Specialization (University of Michigan)</a></li>
+        <li><a class="text-blue-500 hover:underline" href="https://www.coursera.org/account/accomplishments/specialization/U87UNMWZD8H5">Python Specialization (University of Michigan)</a></li>
+        <li><a class="text-blue-500 hover:underline" href="https://www.credly.com/badges/1ad9c31b-d78e-43a3-a4e3-5d22417fdbae/public_url">Kubernetes & Docker (O'Reilly)</a></li>
+        <li><a class="text-blue-500 hover:underline" href="https://www.credly.com/badges/958596c2-4662-409c-a277-3ef6852411f3/public_url">Apache Kafka (O'Reilly)</a></li>
+        <li><a class="text-blue-500 hover:underline" href="https://www.credly.com/badges/87c61572-8d48-478a-96d3-7c771e21b9f4/public_url">Jenkins CI Mastery (O'Reilly)</a></li>
+      </ul>
+    </section>
+
+    <!-- Languages -->
+    <section class="fade-in delay-1200">
+      <h2 class="text-2xl font-bold mb-3">Languages</h2>
+      <p>Italian (Native), English (B2)</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="max-w-4xl mx-auto px-6 py-8 text-sm text-gray-500 dark:text-gray-400 fade-in delay-1400">
+    <p>In compliance with GDPR and Italian Legislative Decree no. 196/2003, I authorize the processing of my personal data.</p>
+    <p class="mt-2"><a class="text-blue-500 hover:underline" href="cv.pdf">Download PDF</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
