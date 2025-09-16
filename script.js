@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const updateButtonIcon = () => {
     if (htmlElement.classList.contains('dark')) {
-      themeToggleBtn.textContent = '☀️';
+      themeToggleBtn.textContent = '☀️'; // dark mode
     } else {
-      themeToggleBtn.textContent = '🌙';
+      themeToggleBtn.textContent = '🌙'; // light mode
     }
   };
 
